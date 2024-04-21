@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .product {
+      margin: 20px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      background-color: #4CAF50;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+  <title>Travel Company</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <div class="product">
+    <h2>Product 1</h2>
+    <img src="product1.jpg" alt="Product 1">
+    <p>Description of Product 1</p>
+    <button onclick="showDetails('product1')">More Details</button>
+  </div>
+  <div class="product">
+    <h2>Product 2</h2>
+    <img src="product2.jpg" alt="Product 2">
+    <p>Description of Product 2</p>
+    <button onclick="showDetails('product2')">More Details</button>
+  </div>
+  <div id="details"></div>
+  <footer>
+    &copy; 2022 Travel Company
+  </footer>
+  <script>
+    function showDetails(product) {
+      // Replace this with actual details retrieval and display logic
+      document.getElementById('details').innerHTML = `<h3>${product} Details</h3><p>Details will go here</p>`;
+    }
+  </script>
+</body>
+</html>
